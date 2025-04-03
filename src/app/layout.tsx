@@ -10,13 +10,14 @@ const inter = Inter({
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.className} dark`}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={inter.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen" suppressHydrationWarning>
-        <RootProvider>
+        <RootProvider
+          theme={{
+            enabled: true,
+            defaultTheme: "dark",
+          }}
+        >
           <Banner
             id="beta-thing"
             className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-200 border-b border-gray-700"
