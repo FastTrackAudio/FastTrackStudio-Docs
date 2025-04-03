@@ -4,3 +4,36 @@
 @import "fumadocs-ui/css/black.css";
 
 @source '../../node_modules/fumadocs-ui/dist/**/*.js';
+
+@tailwind utilities;
+
+:root {
+  /* Main Categories */
+  --color-drums: theme("colors.red.500");
+  --color-perc: theme("colors.orange.300");
+  --color-bass: theme("colors.yellow.500");
+  --color-gtr-e: theme("colors.blue.500");
+  --color-gtr-ag: theme("colors.cyan.600");
+  --color-keys: theme("colors.emerald.500");
+  --color-synths: theme("colors.emerald.700");
+
+  --color-v-leads: theme("colors.fuchsia.400");
+  --color-v-bgvs: theme("colors.purple.400");
+  --color-vx-chops: theme("colors.indigo.900");
+  --color-choir: theme("colors.purple.700");
+  --color-orchestra: theme("colors.amber.800");
+  --color-woodwinds: theme("colors.cyan.500");
+  --color-brass: theme("colors.amber.400");
+  --color-strings: theme("colors.green.600");
+  --color-orch-perc: theme("colors.orange.500");
+  --color-tracks: theme("colors.indigo.300");
+  --color-ref: theme("colors.gray.500");
+  --color-utility: theme("colors.gray.500");
+  --color-mixbus: theme("colors.pink.500");
+
+  /* Effect Categories */
+  --color-reverb: theme("colors.teal.500");
+  --color-delay: theme("colors.indigo.500");
+  --color-special: theme("colors.pink.500");
+  --color-fx: theme("colors.slate.500");
+}

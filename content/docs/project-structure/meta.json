@@ -4,5 +4,7 @@
   "icon": "folder-tree",
   "icon-color": "#3b82f6",
   "url": "/docs/project-structure",
-  "root": true
+
+  "root": true,
+  "pages": ["index", "naming-convention", "example"]
 }

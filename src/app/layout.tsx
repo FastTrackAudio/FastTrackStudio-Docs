@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen" suppressHydrationWarning>
         <RootProvider>
           <Banner
-            id="beta-notices"
+            id="beta-thing"
             className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-200 border-b border-gray-700"
           >
             This website was put together in like 20 minutes. It&apos;s a work

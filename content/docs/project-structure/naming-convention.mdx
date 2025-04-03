@@ -1,3 +1,162 @@
 ---
-title: Naming Convention
+title: Track Naming Convention
 ---
+
+This document outlines the standard naming conventions used throughout the project structure.
+
+## Category Prefixes
+
+Each file is prefixed with a letter or abbreviation indicating its category:
+
+<div className="space-y-2">
+  <div className="text-[var(--color-drums)]">
+    <span className="text-[var(--color-drums)] font-bold">`D`</span> - Drums
+    (e.g., `D Tight`, `D Punch`)
+  </div>
+  <div className="text-[var(--color-perc)]">
+    <span className="text-[var(--color-perc)] font-bold">`P`</span> - Percussion
+    (e.g., `P Put Percussion Sounds Here!`)
+  </div>
+  <div className="text-[var(--color-bass)]">
+    <span className="text-[var(--color-bass)] font-bold">`Bass`</span> - Bass
+    (e.g., `Bass Put Bass GTR Sounds Here!`)
+  </div>
+  <div className="text-[var(--color-gtr-e)]">
+    <span className="text-[var(--color-gtr-e)] font-bold">`G`</span> - Guitar
+    (e.g., `G - Put GTR E Sounds Here!`)
+  </div>
+  <div className="text-[var(--color-keys)]">
+    <span className="text-[var(--color-keys)] font-bold">`K`</span> - Keys
+    (e.g., `K - Put KEYS Sounds Here!`)
+  </div>
+  <div className="text-[var(--color-synths)]">
+    <span className="text-[var(--color-synths)] font-bold">`SY`</span> - Synths
+    (e.g., `SY - Any other Synth Sounds Here!`)
+  </div>
+  <div className="text-[var(--color-tracks)]">
+    <span className="text-[var(--color-tracks)] font-bold">`T`</span> - Tracks
+    (e.g., `T Tracks from a live preformance`)
+  </div>
+  <div className="text-[var(--color-v-leads)]">
+    <span className="text-[var(--color-v-leads)] font-bold">`V`</span> - Vocals
+    (e.g., `V Lead (Performer)`)
+  </div>
+  <div className="text-[var(--color-choir)]">
+    <span className="text-[var(--color-choir)] font-bold">`CS/CA/CT/CB`</span> -
+    Choir (Soprano/Alto/Tenor/Bass)
+  </div>
+  <div className="text-[var(--color-ref)]">
+    <span className="text-[var(--color-ref)] font-bold">`REF`</span> - Reference
+    (e.g., `REF - Not Starting This Yet`)
+  </div>
+  <div className="text-[var(--color-utility)]">
+    <span className="text-[var(--color-utility)] font-bold">`UTIL`</span> -
+    Utility (e.g., `UTIL - Not Starting This Yet`)
+  </div>
+</div>
+
+## Special Suffixes
+
+Files may include special suffixes to indicate their purpose:
+
+- **(Bus)** - Indicates a bus track (e.g., `DRUM (BUS)`)
+- **(Performer)** - Indicates a specific performer track
+- **DBL** - Indicates a double track
+- **SUM** - Indicates a summed track
+- **Fund** - Indicates a fundamental frequency track
+
+## Effect Categories
+
+Vocal effects are categorized by type and color-coded:
+
+### Reverb
+
+<div className="space-y-1">
+  <div className="text-[var(--color-reverb)]">
+    <span className="text-[var(--color-reverb)] font-bold">`V`</span> Room
+  </div>
+  <div className="text-[var(--color-reverb)]">
+    <span className="text-[var(--color-reverb)] font-bold">`V`</span> Short
+  </div>
+  <div className="text-[var(--color-reverb)]">
+    <span className="text-[var(--color-reverb)] font-bold">`V`</span> Long
+  </div>
+  <div className="text-[var(--color-reverb)]">
+    <span className="text-[var(--color-reverb)] font-bold">`V`</span> Throw
+  </div>
+</div>
+
+### Delay
+
+<div className="space-y-1">
+  <div className="text-[var(--color-delay)]">
+    <span className="text-[var(--color-delay)] font-bold">`V`</span> Dly Slap
+  </div>
+  <div className="text-[var(--color-delay)]">
+    <span className="text-[var(--color-delay)] font-bold">`V`</span> Dly Long
+  </div>
+  <div className="text-[var(--color-delay)]">
+    <span className="text-[var(--color-delay)] font-bold">`V`</span> Dly Throw
+  </div>
+</div>
+
+### Special Effects
+
+<div className="space-y-1">
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> Spread
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> SLAM
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> COMP
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> Chorus
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> Oct +
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> Oct -
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> Special 1
+  </div>
+  <div className="text-[var(--color-special)]">
+    <span className="text-[var(--color-special)] font-bold">`V`</span> Special 2
+  </div>
+</div>
+
+### FX
+
+<div className="space-y-1">
+  <div className="text-[var(--color-fx)]">
+    <span className="text-[var(--color-fx)] font-bold">`V`</span> FX 1
+  </div>
+  <div className="text-[var(--color-fx)]">
+    <span className="text-[var(--color-fx)] font-bold">`V`</span> FX 2
+  </div>
+  <div className="text-[var(--color-fx)]">
+    <span className="text-[var(--color-fx)] font-bold">`V`</span> FX 3
+  </div>
+</div>
+
+## Bus Structure
+
+Bus tracks follow a hierarchical naming convention:
+
+1. Main Category Bus (e.g., `DRUM (BUS)`)
+2. Subcategory Bus (e.g., `D KICK (Bus)`)
+3. Summed Tracks (e.g., `D Kick SUM`)
+4. Individual Elements (e.g., `D Kick In`, `D Kick Out`)
+
+## Best Practices
+
+1. Always use the appropriate category prefix
+2. Include descriptive suffixes when applicable
+3. Maintain consistent capitalization
+4. Use parentheses for grouping information
+5. Keep names clear and concise
+6. Follow the established color coding for effects
