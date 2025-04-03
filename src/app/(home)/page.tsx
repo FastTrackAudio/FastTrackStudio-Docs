@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Card, Cards } from "fumadocs-ui/components/card";
 import { FolderTree, Sliders, Music } from "lucide-react";
 
