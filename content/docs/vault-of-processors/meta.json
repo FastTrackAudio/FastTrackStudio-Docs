@@ -1,0 +1,9 @@
+{
+  "title": "Vault of Processors",
+  "description": "Technical documentation on audio processors including EQs, compressors, and other effects",
+  "icon": "sliders",
+  "icon-color": "#10b981",
+  "url": "/docs/vault-of-processors",
+  "pages": ["eq", "compressor"],
+  "root": true
+}

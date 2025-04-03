@@ -1,0 +1,8 @@
+{
+  "title": "Project Structure",
+  "description": "Overview of the codebase organization and architecture",
+  "icon": "folder-tree",
+  "icon-color": "#3b82f6",
+  "url": "/docs/project-structure",
+  "root": true
+}

@@ -1,0 +1,9 @@
+{
+  "title": "The Tone Library",
+  "description": "Collection of guitar, bass, and synth tone presets for music production",
+  "icon": "music",
+  "icon-color": "#f59e0b",
+  "url": "/docs/the-tone-library",
+
+  "root": true
+}
