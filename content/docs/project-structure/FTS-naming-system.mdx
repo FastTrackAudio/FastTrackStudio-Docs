@@ -1,8 +1,45 @@
 ---
-title: Track Naming Convention
+title: FTS Naming System
 ---
 
-This document outlines the standard naming conventions used throughout the project structure.
+This document outlines the standard naming conventions used throughout the FastTrack Studio project structure.
+
+## Naming Structure
+
+The FTS naming convention follows this structure:
+
+<div className="my-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm">
+  <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+    Prefix → [TRACKING INFO] → Subtype → Arrangement Descriptors → (Performer) →
+    Section Descriptors → Layers/Doubles → Multi-Mic/Sources Descriptors →
+    Playlist → (Type)
+  </div>
+</div>
+
+### Example Breakdown:
+
+- **GTR E Clean (Cody) Verse L SM57 .01**
+  - Prefix: GTR E
+  - Subtype: Clean
+  - Performer: (Cody)
+  - Section: Verse
+  - Layer: L
+  - Source: SM57
+  - Playlist: .01
+
+### Type Indicators:
+
+- **(BUS)** - Indicates a bus track
+- **(Sum)** - Indicates a summed track
+- **(MIDI)** - Indicates a MIDI track
+
+### More Realistic Examples:
+
+- GTR E Clean L
+- D Snare Top
+- V Lead Chorus DBL
+- BGV Alto 4
+- C
 
 ## Category Prefixes
 
@@ -11,49 +48,213 @@ Each file is prefixed with a letter or abbreviation indicating its category:
 <div className="space-y-2">
   <div className="text-[var(--color-drums)]">
     <span className="text-[var(--color-drums)] font-bold">`D`</span> - Drums
-    (e.g., `D Tight`, `D Punch`)
-  </div>
-  <div className="text-[var(--color-perc)]">
-    <span className="text-[var(--color-perc)] font-bold">`P`</span> - Percussion
-    (e.g., `P Put Percussion Sounds Here!`)
+    (e.g., `D Snare Top`, `D Kick In`)
   </div>
   <div className="text-[var(--color-bass)]">
-    <span className="text-[var(--color-bass)] font-bold">`Bass`</span> - Bass
-    (e.g., `Bass Put Bass GTR Sounds Here!`)
+    <span className="text-[var(--color-bass)] font-bold">`B`</span> - Bass
+    (e.g., `B E Clean`, `B Synth Sub`)
   </div>
   <div className="text-[var(--color-gtr-e)]">
     <span className="text-[var(--color-gtr-e)] font-bold">`G`</span> - Guitar
-    (e.g., `G - Put GTR E Sounds Here!`)
+    Electric (e.g., `G Clean L`, `G Dist R`)
+  </div>
+  <div className="text-[var(--color-gtr-ag)]">
+    <span className="text-[var(--color-gtr-ag)] font-bold">`GTR AG`</span> -
+    Guitar Acoustic (e.g., `GTR AG L`, `GTR AG R`)
   </div>
   <div className="text-[var(--color-keys)]">
     <span className="text-[var(--color-keys)] font-bold">`K`</span> - Keys
-    (e.g., `K - Put KEYS Sounds Here!`)
+    (e.g., `K Piano`, `K Rhodes`)
   </div>
   <div className="text-[var(--color-synths)]">
     <span className="text-[var(--color-synths)] font-bold">`SY`</span> - Synths
-    (e.g., `SY - Any other Synth Sounds Here!`)
+    (e.g., `SY Chords`, `SY Pads`)
   </div>
   <div className="text-[var(--color-tracks)]">
     <span className="text-[var(--color-tracks)] font-bold">`T`</span> - Tracks
-    (e.g., `T Tracks from a live preformance`)
+    (e.g., `T Live`, `T Reference`)
   </div>
   <div className="text-[var(--color-v-leads)]">
     <span className="text-[var(--color-v-leads)] font-bold">`V`</span> - Vocals
-    (e.g., `V Lead (Performer)`)
+    Lead (e.g., `V Lead Verse`, `V Lead Chorus DBL`)
+  </div>
+  <div className="text-[var(--color-v-bgvs)]">
+    <span className="text-[var(--color-v-bgvs)] font-bold">`BGV`</span> -
+    Background Vocals (e.g., `BGV Alto 1`, `BGV Tenor 2`)
+  </div>
+  <div className="text-[var(--color-vx-chops)]">
+    <span className="text-[var(--color-vx-chops)] font-bold">`VX`</span> - Vocal
+    Chops/Effects (e.g., `VX Chop 1`, `VX Effect`)
   </div>
   <div className="text-[var(--color-choir)]">
-    <span className="text-[var(--color-choir)] font-bold">`CS/CA/CT/CB`</span> -
-    Choir (Soprano/Alto/Tenor/Bass)
+    <span className="text-[var(--color-choir)] font-bold">`C`</span> - Choir
+    (e.g., `C Soprano`, `C Alto`)
   </div>
   <div className="text-[var(--color-ref)]">
     <span className="text-[var(--color-ref)] font-bold">`REF`</span> - Reference
-    (e.g., `REF - Not Starting This Yet`)
+    (e.g., `REF Mix`, `REF Master`)
   </div>
   <div className="text-[var(--color-utility)]">
     <span className="text-[var(--color-utility)] font-bold">`UTIL`</span> -
-    Utility (e.g., `UTIL - Not Starting This Yet`)
+    Utility (e.g., `UTIL Click`, `UTIL Guide`)
   </div>
 </div>
+
+## Category Structure
+
+### DRUMS (D)
+
+- **Drum Kit**
+  - D Kick In
+  - D Kick Out
+  - D Snare Top
+  - D Snare Bottom
+  - D HiHat
+  - D OH L
+  - D OH R
+- **Electric Drums**
+  - D E Kick
+  - D E Snare
+- **Percussion**
+  - P Shaker
+  - P Tambourine
+
+### BASS (B)
+
+- **BASS E**
+  - B E Clean
+  - B E Dist
+- **BASS SYNTH**
+  - B Synth Sub
+  - B Synth Mid
+
+### GTR E (G)
+
+- G Clean L
+- G Clean R
+- G Dist L
+- G Dist R
+
+### GTR AG (GTR AG)
+
+- GTR AG L
+- GTR AG R
+
+### KEYS (K)
+
+- K Piano
+- K Rhodes
+- K Wurli
+
+### SYNTHS (SY)
+
+- **SY Chords**
+  - SY Chords Pad
+  - SY Chords Arp
+- **SY Pads**
+  - SY Pad 1
+  - SY Pad 2
+- **SY Arps**
+  - SY Arp 1
+  - SY Arp 2
+- **SY Leads**
+  - SY Lead 1
+  - SY Lead 2
+- **SY**
+  - SY Bass
+  - SY FX
+
+### TRACKS
+
+- T Live
+- T Reference
+
+### V LEAD (V)
+
+- V Lead Verse
+- V Lead Chorus
+- V Lead Bridge
+
+### V BGVs
+
+- BGV Alto 1
+- BGV Alto 2
+- BGV Tenor 1
+- BGV Tenor 2
+
+### Vocal Chops/Effects (VX)
+
+- VX Chop 1
+- VX Chop 2
+- VX Effect 1
+- VX Effect 2
+
+### ORCHESTRA
+
+- **WOODWINDS (OW)**
+  - OW Flute
+  - OW Oboe
+  - OW Clarinet
+  - OW Bassoon
+- **BRASS (OB)**
+  - OB Trumpet
+  - OB Trombone
+  - OB French Horn
+  - OB Tuba
+- **STRINGS (OS)**
+  - OS Violin 1
+  - OS Violin 2
+  - OS Viola
+  - OS Cello
+  - OS Bass
+- **PERC (OP)**
+  - OP Timpani
+  - OP Xylophone
+  - OP Marimba
+
+### REFERENCES (REF)
+
+- REF Mix
+- REF Master
+- REF A
+- REF B
+
+### UTILITY
+
+- **CLICK + GUIDE**
+  - UTIL Click
+  - UTIL Guide
+- **Global Tracks**
+  - UTIL Playtime
+  - UTIL VEPRO
+  - UTIL Plugin Control
+
+### MIXBUS
+
+- **INST (BUS)**
+  - DRUM (BUS)
+  - PERC (BUS)
+  - BASS (BUS)
+  - GTR (BUS)
+  - KEYS (BUS)
+  - SYNTH (BUS)
+  - TRACKS (BUS)
+  - ORCHESTRA (BUS)
+  - CHOIR (BUS)
+  - OTHER (BUS)
+  - LEAD (BUS)
+  - FX (BUS)
+  - SFX (BUS)
+- **VOX (BUS)**
+  - V LEAD (BUS)
+  - V BGVs (BUS)
+- **PARALLEL**
+  - SS Separator
+  - Delta
+
+### NOT SORTED
+
+- For All Other Tracks that might not have a home yet
 
 ## Special Suffixes
 
@@ -160,3 +361,5 @@ Bus tracks follow a hierarchical naming convention:
 4. Use parentheses for grouping information
 5. Keep names clear and concise
 6. Follow the established color coding for effects
+7. Use the full naming structure when detailed information is needed
+8. Use simplified names for common tracks

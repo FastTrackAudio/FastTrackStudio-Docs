@@ -1,0 +1,57 @@
+---
+title: Four Ways to Use Compression
+---
+
+Compression is a tool that we use to change the balance of the transient and tail of an audio file.
+
+## Key Parameters
+
+- **Threshold**: Tells the compressor which notes to press, not how much to compress them
+- **Ratio**: Tells the compressor how much to compress what's above the threshold
+- **Attack**: How quickly the compressor responds to the input signal
+- **Release**: How quickly the compressor returns to the idle state after the input signal is below the threshold
+
+## The Four Compression Styles
+
+|                  | Fast Attack | Slow Attack |
+| ---------------- | ----------- | ----------- |
+| **Fast Release** | THICK       | Groovy      |
+| **Slow Release** | Consistent  | Punchy      |
+
+## Attack and Release Timing
+
+### What is Fast or Slow Attack?
+
+- **Fast Attack**: 1 ms
+- **Slow Attack**:
+  - 30-50ms for Percussive sounds
+  - 50-100ms for sustained sounds
+
+### What is Fast or Slow Release?
+
+- **Fast Release**: 10-20ms
+- **Slow Release**: 500ms-1 second
+
+## Compression Styles Explained
+
+### Thick Compression
+
+- **Attack**: FAST (1 ms) - Decreases Transient
+- **Release**: FAST (30 ms) - Increases Tail (With Makeup Gain)
+
+### Groovy Compression
+
+- **Attack**: SLOW (50 ms) - Increases Transient
+- **Release**: FAST (10-20 ms)
+
+### Consistent Compression
+
+- Focused on macro dynamics
+- Release should be slow enough that it barely gets back to 0 before the next transient
+- **Attack**: FAST (1 ms)
+- **Release**: SLOW (500ms-1 second)
+
+### Punchy Compression
+
+- **Attack**: Slow (50ms) - Increases Transient
+- **Release**: Slow (500ms-1 second) - Decreases Tail

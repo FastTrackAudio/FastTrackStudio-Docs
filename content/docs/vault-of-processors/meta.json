@@ -4,6 +4,6 @@
   "icon": "sliders",
   "icon-color": "#10b981",
   "url": "/docs/vault-of-processors",
-  "pages": ["eq", "compressor"],
+  "pages": ["EQ", "compressor"],
   "root": true
 }

@@ -6,5 +6,5 @@
   "url": "/docs/project-structure",
 
   "root": true,
-  "pages": ["index", "naming-convention", "example"]
+  "pages": ["index", "FTS-naming-system", "example"]
 }
